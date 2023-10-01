@@ -9,7 +9,7 @@ db = SQLAlchemy(app)
 api = Api(app)
 CORS(app)
 
-from app.resources import WartegRes
-api.add_resource(WartegRes,'/api/warteg/')
+from app.resources import WartegResorce
+api.add_resource(WartegResorce, '/api/warteg/')
 
 from app.views import home

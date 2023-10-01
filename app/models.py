@@ -1,6 +1,6 @@
 from app import db
 
-class Warteg(db.Model):
+class WartegModel(db.Model):
     id = db.Column('warteg_id', db.Integer, primary_key = True)
     name = db.Column(db.String(100))
     desc = db.Column(db.String(100), nullable=True)
