@@ -8,3 +8,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///warteg.db'
 db = SQLAlchemy(app)
 api = Api(app)
 CORS(app)
+
+from app.resources import WartegRes
+api.add_resource(WartegRes,'/api/warteg/')
