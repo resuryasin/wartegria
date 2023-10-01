@@ -11,3 +11,5 @@ CORS(app)
 
 from app.resources import WartegRes
 api.add_resource(WartegRes,'/api/warteg/')
+
+from app.views import home
